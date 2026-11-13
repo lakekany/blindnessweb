@@ -13,7 +13,7 @@ html,body{min-height:100%;}header{position:relative;z-index:500;padding:12px 20p
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script><script>
 'use strict';
 // API 키는 이 파일에 넣지 않습니다. 아래 주소는 공개 웹 앱 주소입니다.
-const DEFAULT_SERVER='https://script.google.com/macros/s/AKfycbxTTftcSgWNg25TxTJMT0bOXw-jxcprsyPNijbPI25ShaQsAD_olqR_eQCkRoIdQxIGYg/exec';
+const DEFAULT_SERVER='https://script.google.com/macros/s/AKfycbwY-ahukL8H18SYIddiIraBzQZ3mS0U3x86uj1qWhepyHpI4L68qCLRiae4DHM1nUErng/exec';
 const $=id=>document.getElementById(id);
 const SERVER=DEFAULT_SERVER;
 let map=null,markers=[],userMarker=null,position=null,stations=[],cursor=0,selected=null,arrivals=[],route='',keyword='',phase='station',last=$('status').textContent,seq=0,arrivalSeq=0,callbackId=0,recognition=null,listening=false,obtainingLocation=false;
